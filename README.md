@@ -52,6 +52,6 @@ pytest -m smoke
 
 - Boundary values are tested for volume (-1, 0, 1, 99, 100, 101)
   and channels (0, 1, 999, 1000).
-- The tests found two mismatches between the code and the
-  specification (a string passed as volume, and channel 0 being allowed);
-  both were fixed.
+- To check that the tests can fail, two bugs were introduced on purpose
+  (a string accepted as volume, and channel 0 being allowed);
+  the tests caught both, and the code was then fixed.
